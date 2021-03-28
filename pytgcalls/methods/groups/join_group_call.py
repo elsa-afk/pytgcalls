@@ -57,8 +57,6 @@ class JoinGroupCall(SpawnProcess):
                         }),
                     ),
                 )
-            except Exception as e:
-                raise Exception('Error internal: UNKNOWN ->', e)
         else:
             code_err = 'PYROGRAM_CLIENT_IS_NOT_RUNNING'
             if not self.pytgcalls._init_js_core:
